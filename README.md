@@ -5,3 +5,7 @@ ShareReads is a personal project developed by Austin, TX software engineer [Dani
 
 ## About this Repo
 This repository is a practice repo for learning to use Selenium for test automation.
+
+## Installing Dependencies
+This is a Maven project. To install the dependencies, run the following command:
+```mvn install```
