@@ -1,4 +1,4 @@
-package com.example.sharereadsautomation;
+package com.example.sharereadsautomation.practicetests;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
