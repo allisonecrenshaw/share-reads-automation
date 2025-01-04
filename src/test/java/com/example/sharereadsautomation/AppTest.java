@@ -1,4 +1,4 @@
-package com.example.share.reads.automation;
+package com.example.sharereadsautomation;
 
 import static org.junit.Assert.assertTrue;
 
