@@ -41,3 +41,6 @@ mvn-timestamps/
 
 # Maven target directory
 /target/
+
+# Personal notes file
+notes.txt
