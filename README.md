@@ -9,3 +9,6 @@ This repository is a practice repo for learning to use Selenium for test automat
 ## Installing Dependencies
 This is a Maven project. To install the dependencies, run the following command:
 ```mvn install```
+
+## Selenium Documentation
+For Selenium's official documentation, visit https://www.selenium.dev/documentation/
