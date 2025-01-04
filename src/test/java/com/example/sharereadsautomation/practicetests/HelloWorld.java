@@ -9,6 +9,8 @@ public class HelloWorld {
 
         driver.get("https://selenium.dev");
 
+        driver.get("https://sharereads.xyz/");
+        
         driver.quit();
     }
 }
