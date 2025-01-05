@@ -27,7 +27,6 @@ public class SearchForBooks {
     WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(2));
     List<WebElement> searchResults = wait.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(By.id("book-search-result")));
 
-    
     Assertions.assertNotNull(searchResults);
     Assertions.assertTrue(searchResults.size() > 0);
 
