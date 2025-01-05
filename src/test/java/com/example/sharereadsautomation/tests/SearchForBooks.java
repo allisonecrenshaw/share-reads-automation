@@ -1,11 +1,15 @@
 package com.example.sharereadsautomation.tests;
 
 import java.time.Duration;
+import java.util.List;
 
+import org.junit.jupiter.api.Assertions;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.chrome.ChromeDriver;;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class SearchForBooks {
   public static void main(String[] args) {
@@ -19,6 +23,13 @@ public class SearchForBooks {
 
     WebElement bookSearchButton = driver.findElement(By.id("book-search-button"));
     bookSearchButton.click();
+
+    WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(2));
+    List<WebElement> searchResults = wait.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(By.id("book-search-result")));
+
+    
+    Assertions.assertNotNull(searchResults);
+    Assertions.assertTrue(searchResults.size() > 0);
 
     driver.quit();
   }
